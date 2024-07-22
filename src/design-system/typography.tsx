@@ -11,6 +11,7 @@ interface Props {
         | "body-lg"
         | "body-base"
         | "body-sm"
+        | "body-badge"
     component ?: "h1" | "h2" | "h3" | "h4" | "h5" | "p" | "div" | "span";
     theme?: "black" | "gray" | "white" | "primary" | "secondary";
     weight?: "regular" | "medium";
@@ -33,10 +34,10 @@ export const Typography = ({
 
     switch (variant) {
         case "h1":
-            variantStyles = "text-lg md:text-xl sm:text-xl"
+            variantStyles = "text-lg md:text-3xl"
             break;
         case "h2":
-            variantStyles = "text-lg md:text-xl sm:text-xl"
+            variantStyles = "text-lg md:text-xl"
             break;
         case "body-lg":
             variantStyles = "text-base md:text-lg"
@@ -46,6 +47,9 @@ export const Typography = ({
             break;
         case "body-sm":
             variantStyles = "text-sm"
+            break;
+        case "body-badge":
+            variantStyles = "text-badge"
             break;
     }
 

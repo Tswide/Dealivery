@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { BellIcon, Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/20/solid';
+import { BellIcon, Bars3Icon, MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/20/solid';
 
 interface TopBarProps {
     setSidebarOpen: (open: boolean) => void;
@@ -9,7 +9,7 @@ interface TopBarProps {
 const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
     return (
         <div
-            className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+            className="sticky top-0 z-40 flex h-24 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button type="button" onClick={() => setSidebarOpen(true)} className="-m-2.5 p-2.5 text-gray-700 lg:hidden">
                 <span className="sr-only">Open sidebar</span>
                 <Bars3Icon aria-hidden="true" className="h-6 w-6"/>
@@ -38,7 +38,13 @@ const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
                     <div aria-hidden="true" className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200"/>
                     <button
                         type="button"
-                        className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="rounded-md bg-white px-8 py-3 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    >
+                        <FunnelIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
+                    </button>
+                    <button
+                        type="button"
+                        className="rounded-md bg-green-600 px-20 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         onClick={() => setDrawerOpen(true)}
                     >
                         Panier

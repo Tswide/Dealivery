@@ -31,7 +31,7 @@ export default {
       '2xl': [
         '32px', {
           lineHeight: '36px',
-          fontWeight: '900',
+          fontWeight: '700',
         }],
       xl: [
         '30px', {
@@ -53,9 +53,10 @@ export default {
           lineHeight: '23px',
           fontWeight: '500',
         }],
-      'date': [
-        '24px', {
-          fontWeight: '700',
+      'badge': [
+        '13px', {
+          lineHeight: '23px',
+          fontWeight: '500',
         }],
     },
     borderRadius: {

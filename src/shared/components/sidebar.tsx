@@ -24,7 +24,7 @@ const navigation_bot: NavigationItem[] = [
 const Sidebar: FC = () => {
     return (
         <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4">
-            <div className="flex h-20 shrink-0 items-center">
+            <div className="flex h-24 shrink-0 items-center">
                 <a href="/">
                     <img
                         alt="Your Company"

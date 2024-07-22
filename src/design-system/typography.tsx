@@ -23,24 +23,26 @@ interface Props {
 export const Typography = ({
    variant = "body-base",
    component: Component = "p",
-   // theme = "black",
+   theme = "black",
    weight = "regular",
    children,
    className,
    onClick,
 }: Props) => {
-    // let variantStyles: string = "", colorStyles: string = "";
-    let variantStyles: string = "";
+    let variantStyles: string = "", colorStyles: string = "";
 
     switch (variant) {
         case "h1":
-            variantStyles = "text-lg md:text-3xl"
+            variantStyles = "text-xl md:text-3xl"
             break;
         case "h2":
+            variantStyles = "text-lg md:text-2xl"
+            break;
+        case "h3":
             variantStyles = "text-lg md:text-xl"
             break;
         case "body-lg":
-            variantStyles = "text-base md:text-lg"
+            variantStyles = "text-sm md:text-lg"
             break;
         case "body-base":
             variantStyles = "text-base"
@@ -53,29 +55,26 @@ export const Typography = ({
             break;
     }
 
-    // switch (theme) {
-    //     case "black": //default
-    //         colorStyles = "text-gray";
-    //         break
-    //     case "gray":
-    //         colorStyles = "text-gray-700";
-    //         break
-    //     case "white":
-    //         colorStyles = "text-white";
-    //         break
-    //     case "primary":
-    //         colorStyles = "text-primary";
-    //         break
-    //     case "secondary":
-    //         colorStyles = "text-secondary";
-    //         break
-    // }
+    switch (theme) {
+        case "black": //default
+            colorStyles = "text-gray-900";
+            break
+        case "gray":
+            colorStyles = "text-gray-700";
+            break
+        case "white":
+            colorStyles = "text-white";
+            break
+        case "primary":
+            colorStyles = "text-primary-600";
+            break
+    }
 
     return (
         <Component
             className={clsx(
                 variantStyles,
-                // colorStyles,
+                colorStyles,
                 weight === "medium" && "font-medium",
                 className,
             )}

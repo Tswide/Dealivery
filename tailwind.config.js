@@ -5,25 +5,30 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // colors: {
-    //   white: "#ffffff",
-    //   primary: { //green
-    //     DEFAULT: "#73CBA7", // background - text
-    //     600: "#1BBC7A", // hover
-    //     700: "#83DA3F", // special flashy green
-    //   },
-    //   secondary: { // red
-    //     300: "#FEE2E2", // hover
-    //     400: "#FFD2D1", // background
-    //     500: "#FCA5A5", // stroke
-    //     DEFAULT: "#B91C1C", // text
-    //   },
-    // },
+    colors: {
+      white: "#ffffff",
+      primary: { //primary
+        DEFAULT: "#4ade80", // button
+        500: "#22c55e",
+        600: "#16a34a", // text
+      },
+      secondary: { // red
+        300: "#FEE2E2", // hover
+        400: "#FFD2D1", // background
+        500: "#FCA5A5", // stroke
+        DEFAULT: "#B91C1C", // text
+      },
+      gray: {
+        50: "#f9fafb",
+        100: "#f3f4f6",
+        200: "#e5e7eb",
+        400: "#94a3b8",
+        500: "#6b7280",
+        700: "#374151",
+        default: "#111827",
+      },
+    },
     fontSize: {
-      '4xl': [
-        '55px', {
-          fontWeight: '700',
-        }],
       '3xl': [
         '36px', {
           fontWeight: '700',
@@ -36,7 +41,7 @@ export default {
       xl: [
         '30px', {
           lineHeight: '34px',
-          fontWeight: '700',
+          fontWeight: '600',
         }],
       lg: [
         '18px', {
@@ -54,7 +59,7 @@ export default {
           fontWeight: '500',
         }],
       'badge': [
-        '13px', {
+        '12px', {
           lineHeight: '23px',
           fontWeight: '500',
         }],

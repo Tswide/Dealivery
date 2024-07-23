@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { BellIcon, Bars3Icon, MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/20/solid';
+import { Bars3Icon, MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/20/solid';
+import { Button } from '../../design-system/button';
 
 interface TopBarProps {
     setSidebarOpen: (open: boolean) => void;
@@ -31,24 +32,12 @@ const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
                     />
                 </form>
                 <div className="flex items-center gap-x-4 lg:gap-x-6">
-                    <button type="button" className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon aria-hidden="true" className="h-6 w-6"/>
-                    </button>
+                    <FunnelIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
                     <div aria-hidden="true" className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200"/>
-                    <button
-                        type="button"
-                        className="rounded-md bg-white px-8 py-3 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                    >
-                        <FunnelIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
-                    </button>
-                    <button
-                        type="button"
-                        className="rounded-md bg-green-600 px-20 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    <Button 
+                        children="Panier"
                         onClick={() => setDrawerOpen(true)}
-                    >
-                        Panier
-                    </button>
+                    />
                 </div>
             </div>
         </div>

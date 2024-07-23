@@ -42,14 +42,14 @@ const Sidebar: FC = () => {
                                     <a
                                         href={item.href}
                                         className={classNames(
-                                            item.current ? 'bg-gray-50 text-green-600' : 'text-gray-700 hover:bg-gray-50 hover:text-green-600',
+                                            item.current ? 'bg-gray-50 text-primary-600' : 'text-gray-700 hover:bg-gray-50 hover:text-primary-600',
                                             'group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6',
                                         )}
                                     >
                                         <item.icon
                                             aria-hidden="true"
                                             className={classNames(
-                                                item.current ? 'text-green-600' : 'text-gray-400 group-hover:text-green-600',
+                                                item.current ? 'text-primary-600' : 'text-gray-400 group-hover:text-primary-600',
                                                 'h-6 w-6 shrink-0',
                                             )}
                                         />
@@ -65,11 +65,11 @@ const Sidebar: FC = () => {
                                 <li key={item.name}>
                                     <a
                                         href={item.href}
-                                        className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                                        className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-primary-600"
                                     >
                                         <item.icon
                                             aria-hidden="true"
-                                            className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-green-600"
+                                            className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-primary-600"
                                         />
                                         {item.name}
                                     </a>

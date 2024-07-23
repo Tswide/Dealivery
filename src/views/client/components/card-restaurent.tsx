@@ -1,3 +1,4 @@
+import { Badge } from "../../../design-system/badge.tsx";
 import {Typography} from "../../../design-system/typography.tsx";
 import { BookmarkIcon } from '@heroicons/react/24/outline';
 
@@ -17,27 +18,24 @@ export default function CardRestaurent({title, subtitle, timeAsk,  timeLivery}: 
                     <div className="flex flex-col gap-2">
                         <Typography
                             variant="h1"
-                            component="h1"
+                            component="h2"
                             children={title}
                         />
                         <Typography
                             variant="body-base"
-                            component="h1"
+                            component="h3"
+                            theme="gray"
                             children={subtitle}
                         />
                         <div className="flex gap-2.5">
-                            <div
-                                className="relative border-2 inline-flex items-center gap-x-1.5 px-1 text-badge font-semibold text-gray-900 focus:z-10 bg-green-100"
-                            >
-                                <BookmarkIcon aria-hidden="true" className="h-4 w-4 text-gray-400"/>
-                                {timeAsk}
-                            </div>
-                            <div
-                                className="relative border-2 inline-flex items-center gap-x-1.5 px-1 text-badge font-semibold text-gray-900 focus:z-10 bg-green-100"
-                            >
-                                <BookmarkIcon aria-hidden="true" className="h-4 w-4 text-gray-400"/>
-                                {timeLivery}
-                            </div>
+                            <Badge 
+                                children={timeAsk}
+                                variant="outline"
+                            />
+                            <Badge 
+                                children={timeLivery}
+                                variant="outline"
+                            />
                         </div>
                     </div>
                     <BookmarkIcon

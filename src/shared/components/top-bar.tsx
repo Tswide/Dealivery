@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Bars3Icon, MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/20/solid';
+import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { Button } from '../../design-system/button';
 
 interface TopBarProps {
@@ -32,8 +32,6 @@ const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
                     />
                 </form>
                 <div className="flex items-center gap-x-4 lg:gap-x-6">
-                    <FunnelIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
-                    <div aria-hidden="true" className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200"/>
                     <Button 
                         children="Panier"
                         onClick={() => setDrawerOpen(true)}

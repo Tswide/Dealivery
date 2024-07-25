@@ -8,15 +8,30 @@ export default {
     colors: {
       white: "#ffffff",
       primary: { //primary
-        DEFAULT: "#4ade80", // button
+        50: "#f0fdf4",
+        200: "#bbf7d0",
+        DEFAULT: "#4ade80", // button 400
         500: "#22c55e",
         600: "#16a34a", // text
+        700: "#15803d", // text
       },
-      secondary: { // red
+      red: {
+        50: "#fef2f2",
+        200: "#fecaca",
         300: "#FEE2E2", // hover
         400: "#FFD2D1", // background
         500: "#FCA5A5", // stroke
-        DEFAULT: "#B91C1C", // text
+        DEFAULT: "#B91C1C", // text 700
+      },
+      yellow: {
+        50: "#fefce8",
+        200: "#fef08a",
+        800: "#854d0e", // hover
+      },
+      blue: {
+        50: "#eff6ff",
+        200: "#bfdbfe",
+        700: "#1d4ed8",
       },
       gray: {
         50: "#f9fafb",
@@ -25,7 +40,7 @@ export default {
         400: "#94a3b8",
         500: "#6b7280",
         700: "#374151",
-        default: "#111827",
+        default: "#111827", //900
       },
     },
     fontSize: {
@@ -59,7 +74,7 @@ export default {
           fontWeight: '500',
         }],
       'badge': [
-        '12px', {
+        '11px', {
           lineHeight: '23px',
           fontWeight: '500',
         }],

@@ -1,10 +1,10 @@
-
 import clsx from "clsx";
 import { IconProps } from "../type/iconProps";
+import React from "react";
 
 interface Props {
     size?: "small" | "medium" | "large";
-    variant?: "accent" | "secondary" | "outline" | "ico";
+    variant?: "yellow" | "red" | "gray" | "blue" | "green" | "ico";
     icon?: IconProps;
     iconTheme?: "accent" | "secondary" | "gray";
     iconPosition?: "left" | "right";
@@ -14,10 +14,10 @@ interface Props {
 
 export const Badge = ({
     size="large", 
-    variant="accent",
+    variant="gray",
     icon,
     iconTheme="accent",
-    iconPosition="right",
+    iconPosition="left",
     children,
     onClick,
 }: Props) => {
@@ -26,11 +26,20 @@ export const Badge = ({
         icoSize: number = 0;
 
     switch (variant) {
-        case "accent": //default
-            variantStyles = "bg-primary-600 hover:bg-primary-500 text-white rounded";
+        case "green": //default
+            variantStyles = "bg-primary-50 ring-1 ring-inset ring-primary-200 text-primary-700 rounded";
             break;
-        case "outline":
-            variantStyles = "bg-white hover:bg-gray-400 border border-gray-500 text-gray rounded";
+        case "gray":
+            variantStyles = "bg-gray-50 ring-1 ring-inset ring-gray-200 text-gray-600 rounded";
+            break;
+        case "yellow":
+            variantStyles = "bg-yellow-50 ring-1 ring-inset ring-yellow-200 text-yellow-800 rounded";
+            break;
+        case "blue":
+            variantStyles = "bg-blue-50 ring-1 ring-inset ring-blue-200 text-blue-700 rounded";
+            break;
+        case "red":
+            variantStyles = "bg-red-50 ring-1 ring-inset ring-red-200 text-red rounded";
             break;
         case "ico":
             if (iconTheme === "accent") { //default
@@ -68,20 +77,20 @@ export const Badge = ({
     return (
         <div
             className={clsx(variantStyles, sizeStyles, icoSize, "relative")}
-            onClick={onClick} 
+            onClick={onClick}
         >
             <div>
-                {icon && variant === "ico" 
-                ? (<icon.icon size={icoSize} />)
-                : (<div className={clsx(icon && "flex items-center gap-1")}>
-                    {icon && iconPosition === "left" && (
-                        <icon.icon size={icoSize} />
-                    )}
-                    {children}
-                    {icon && iconPosition === "right" && (
-                        <icon.icon size={icoSize} />
-                    )}
-                </div>)
+                {icon && variant === "ico"
+                    ? (<icon.icon size={icoSize}/>)
+                    : (<div className={clsx(icon && "inline-flex items-center gap-1")}>
+                        {icon && iconPosition === "left" && (
+                            <icon.icon size={icoSize}/>
+                        )}
+                        {children}
+                        {icon && iconPosition === "right" && (
+                            <icon.icon size={icoSize}/>
+                        )}
+                    </div>)
                 }
             </div>
         </div>

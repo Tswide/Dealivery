@@ -1,4 +1,5 @@
 import {Typography} from "../../../design-system/typography.tsx";
+import Filter from "../components/filter.tsx";
 
 export function RestaurentPageClient() {
     return (
@@ -24,6 +25,9 @@ export function RestaurentPageClient() {
                     />
                 </div>
             </header>
+            <section>
+                <Filter />
+            </section>
         </main>
     );
 }

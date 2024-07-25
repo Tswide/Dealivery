@@ -67,8 +67,8 @@ export const Button = ({
             icoSize = 20;
             break;
         case "large": // default
-            sizeStyles = `text-base font-medium ${
-                variant === "ico" ? "flex items-center justify-center w-[60px] h-[60px]" : "px-20 py-3"
+            sizeStyles = `text-sm font-medium sm:text-base ${
+                variant === "ico" ? "flex items-center justify-center w-[60px] h-[60px]" : "px-5 py-1 sm:px-20 sm: py-3"
             }`;
             icoSize = 24;
             break;

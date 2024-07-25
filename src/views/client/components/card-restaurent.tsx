@@ -30,11 +30,11 @@ export default function CardRestaurent({title, subtitle, timeAsk,  timeLivery}: 
                         <div className="flex gap-2.5">
                             <Badge 
                                 children={timeAsk}
-                                variant="outline"
+                                variant="yellow"
                             />
                             <Badge 
                                 children={timeLivery}
-                                variant="outline"
+                                variant="blue"
                             />
                         </div>
                     </div>

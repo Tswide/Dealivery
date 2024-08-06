@@ -13,7 +13,7 @@ function App() {
                     <Route path="/" element={<DashboardPageClient />} />
                     <Route path="/menu" element={<MenuPageClient />} />
                     <Route path="/order" element={<OrderPageClient />} />
-                    <Route path="/restaurent" element={<RestaurentPageClient />} />
+                    <Route path="/restaurent/:id" element={<RestaurentPageClient />} />
                 </Routes>
             </AdminShell>
         </Router>

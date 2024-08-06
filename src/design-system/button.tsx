@@ -1,7 +1,7 @@
-
 import clsx from "clsx";
 import { Spinner } from "./spinner";
 import { IconProps } from "../type/iconProps";
+import React from "react";
 
 interface Props {
     size?: "small" | "medium" | "large";
@@ -61,14 +61,14 @@ export const Button = ({
             icoSize = 18;
             break;
         case "medium":
-            sizeStyles = `text-base font-medium ${
+            sizeStyles = `text-sm font-medium ${
                 variant === "ico" ? "flex items-center justify-center w-[50px] h-[50px]" : "px-12 py-3"
             }`;
             icoSize = 20;
             break;
         case "large": // default
             sizeStyles = `text-sm font-medium sm:text-base ${
-                variant === "ico" ? "flex items-center justify-center w-[60px] h-[60px]" : "px-5 py-1 sm:px-20 sm: py-3"
+                variant === "ico" ? "flex items-center justify-center w-[60px] h-[60px]" : "px-5 py-2 sm:px-20 sm:py-3"
             }`;
             icoSize = 24;
             break;

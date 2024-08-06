@@ -1,5 +1,5 @@
 import {Typography} from "../../../design-system/typography.tsx";
-
+//TODO afficher les commande terminer et payer
 export function OrderPageClient() {
     return (
         <>

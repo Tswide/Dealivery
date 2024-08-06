@@ -27,9 +27,9 @@ const Sidebar: FC = () => {
             <div className="flex h-24 shrink-0 items-center">
                 <a href="/">
                     <img
-                        alt="Your Company"
-                        src="./logo_dealivery.png"
-                        className="h-10 w-auto"
+                        alt="Your Company Small Logo"
+                        src="/logo_dealivery.png"
+                        className="h-10 w-auto block"
                     />
                 </a>
             </div>

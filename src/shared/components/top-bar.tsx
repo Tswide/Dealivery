@@ -2,6 +2,8 @@ import { FC } from 'react';
 import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { Button } from '../../design-system/button';
 
+//TODO ajouter un badge au dessus a gauche du bouton panier "nombre de commande"
+
 interface TopBarProps {
     setSidebarOpen: (open: boolean) => void;
     setDrawerOpen: (open: boolean) => void;
@@ -27,7 +29,7 @@ const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
                         id="search-field"
                         name="search"
                         type="search"
-                        placeholder="Search..."
+                        placeholder="Rechercher"
                         className="block h-full w-full border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                     />
                 </form>
@@ -35,6 +37,7 @@ const TopBar: FC<TopBarProps> = ({ setSidebarOpen, setDrawerOpen }) => {
                     <Button 
                         children="Panier"
                         onClick={() => setDrawerOpen(true)}
+                        size="large"
                     />
                 </div>
             </div>

@@ -1,0 +1,186 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "title": "L'Arborizo",
+      "subtitle": "Italian Food",
+      "timeAsk": "J-2 boarding",
+      "timeLivery": "12 min delivery",
+      "menus": [
+        {
+          "id": 101,
+          "title": "Pasta Carbonara",
+          "subtitle": "Plat de pâtes accompagné de sa sauce crémeuse...",
+          "price": "5€",
+          "allergens": ["lactose", "gluten"],
+          "ingredients": [
+            { "name": "pâtes", "selected": true },
+            { "name": "crème", "selected": true },
+            { "name": "œufs", "selected": true },
+            { "name": "fromage", "selected": true },
+            { "name": "lardons", "selected": true }
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Margherita Pizza",
+          "subtitle": "Pizza traditionnelle avec tomate, mozzarella et basilic",
+          "price": "8€",
+          "allergens": ["lactose", "gluten"],
+          "ingredients": [
+            { "name": "pâte à pizza", "selected": true },
+            { "name": "tomate", "selected": true },
+            { "name": "mozzarella", "selected": true },
+            { "name": "basilic", "selected": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chez Pierre",
+      "subtitle": "French Cuisine",
+      "timeAsk": "Order now",
+      "timeLivery": "20 min delivery",
+      "menus": [
+        {
+          "id": 201,
+          "title": "Soupe à l'oignon",
+          "subtitle": "Soupe traditionnelle française avec des oignons caramélisés",
+          "price": "7,99€",
+          "allergens": ["gluten"],
+          "ingredients": [
+            { "name": "oignons", "selected": true },
+            { "name": "beurre", "selected": true },
+            { "name": "bouillon de bœuf", "selected": true },
+            { "name": "pain", "selected": true },
+            { "name": "fromage", "selected": true }
+          ]
+        },
+        {
+          "id": 202,
+          "title": "Escargots de Bourgogne",
+          "subtitle": "Escargots cuits avec du beurre d'ail et de persil",
+          "price": "10€",
+          "allergens": ["lactose"],
+          "ingredients": [
+            { "name": "escargots", "selected": true },
+            { "name": "beurre", "selected": true },
+            { "name": "ail", "selected": true },
+            { "name": "persil", "selected": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sushi Master",
+      "subtitle": "Japanese Sushi",
+      "timeAsk": "J-1 boarding",
+      "timeLivery": "15 min delivery",
+      "menus": [
+        {
+          "id": 301,
+          "title": "California Roll",
+          "subtitle": "Sushi roll avec crabe, avocat et concombre",
+          "price": "6,50€",
+          "allergens": ["crustacés", "gluten"],
+          "ingredients": [
+            { "name": "crabe", "selected": true },
+            { "name": "avocat", "selected": true },
+            { "name": "concombre", "selected": true },
+            { "name": "riz", "selected": true },
+            { "name": "nori", "selected": true }
+          ]
+        },
+        {
+          "id": 302,
+          "title": "Sashimi Deluxe",
+          "subtitle": "Assortiment de sashimi frais",
+          "price": "15€",
+          "allergens": ["poisson"],
+          "ingredients": [
+            { "name": "thon", "selected": true },
+            { "name": "saumon", "selected": true },
+            { "name": "daurade", "selected": true },
+            { "name": "wasabi", "selected": true },
+            { "name": "gingembre", "selected": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Taco Town",
+      "subtitle": "Mexican Tacos",
+      "timeAsk": "Order now",
+      "timeLivery": "10 min delivery",
+      "menus": [
+        {
+          "id": 401,
+          "title": "Taco de Carne Asada",
+          "subtitle": "Taco avec steak grillé, oignons et coriandre",
+          "price": "3€",
+          "allergens": ["gluten"],
+          "ingredients": [
+            { "name": "steak", "selected": true },
+            { "name": "oignons", "selected": true },
+            { "name": "coriandre", "selected": true },
+            { "name": "tortilla", "selected": true }
+          ]
+        },
+        {
+          "id": 402,
+          "title": "Taco de Pollo",
+          "subtitle": "Taco au poulet avec guacamole et salsa",
+          "price": "3,50€",
+          "allergens": ["gluten"],
+          "ingredients": [
+            { "name": "poulet", "selected": true },
+            { "name": "guacamole", "selected": true },
+            { "name": "salsa", "selected": true },
+            { "name": "tortilla", "selected": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Burger Bliss",
+      "subtitle": "American Burgers",
+      "timeAsk": "J-3 boarding",
+      "timeLivery": "25 min delivery",
+      "menus": [
+        {
+          "id": 501,
+          "title": "Cheeseburger",
+          "subtitle": "Burger classique avec fromage, laitue et tomate",
+          "price": "5€",
+          "allergens": ["lactose", "gluten"],
+          "ingredients": [
+            { "name": "pain à burger", "selected": true },
+            { "name": "bœuf", "selected": true },
+            { "name": "fromage", "selected": true },
+            { "name": "laitue", "selected": true },
+            { "name": "tomate", "selected": true }
+          ]
+        },
+        {
+          "id": 502,
+          "title": "Bacon Burger",
+          "subtitle": "Burger avec bacon croustillant",
+          "price": "6€",
+          "allergens": ["lactose", "gluten"],
+          "ingredients": [
+            { "name": "pain à burger", "selected": true },
+            { "name": "bœuf", "selected": true },
+            { "name": "bacon", "selected": true },
+            { "name": "fromage", "selected": true },
+            { "name": "laitue", "selected": true },
+            { "name": "tomate", "selected": true }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -89,8 +89,8 @@ export function RestaurentPageClient() {
 
     return (
         <div>
-            <a href="/menu">
-                <Button size="small" variant="outline" children="Retour en arrière" />
+            <a href="/">
+                <Button size="small" variant="outline" children="Retour en arrière"/>
             </a>
             <header className="my-5">
                 <Typography
@@ -134,7 +134,8 @@ export function RestaurentPageClient() {
                             {selectedMenu.ingredients.map((ingredient, ingredientId) => (
                                 <div key={ingredientId} className="relative flex items-start py-4">
                                     <div className="min-w-0 flex-1 text-sm leading-6">
-                                        <label htmlFor={`ingredient-${ingredientId}`} className="select-none font-medium text-gray-900">
+                                        <label htmlFor={`ingredient-${ingredientId}`}
+                                               className="select-none font-medium text-gray-900">
                                             {ingredient.name}
                                         </label>
                                     </div>

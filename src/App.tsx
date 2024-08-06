@@ -5,7 +5,7 @@ import {RestaurentPageClient} from "./views/client/containers/restaurent-page.ts
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Dealivery">
             <AdminShell>
                 <Routes>
                     <Route path="/" element={<MenuPageClient />} />

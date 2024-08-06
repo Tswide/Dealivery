@@ -7,12 +7,6 @@ import restaurentData from '../../../data/restaurents.json';
 import { Button } from "../../../design-system/button.tsx";
 import { v4 as uuidv4 } from 'uuid'; // Importer la bibliothèque uuid
 
-//TODO mettre en place le drawer qui s'ouvre lors de l'ajout au panier
-//TODO mettre l'addition et soustraction sur la modal a coter "d'ajouter au panier"
-//TODO regler le soucis modal en version mobile
-//TODO ajouter les nom des restaurent dans le panier
-//TODO regler le soucis lorsque 2 menus sont similaire automatiquement incremnter de 1 l'articles
-
 interface Ingredient {
     name: string;
     selected: boolean;
@@ -95,7 +89,9 @@ export function RestaurentPageClient() {
 
     return (
         <div>
-            <a href="/menu">Retour en arrière</a>
+            <a href="/menu">
+                <Button size="small" variant="outline" children="Retour en arrière" />
+            </a>
             <header className="my-5">
                 <Typography
                     variant="h1"

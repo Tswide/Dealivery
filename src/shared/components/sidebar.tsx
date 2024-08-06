@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ShoppingBagIcon,  Cog6ToothIcon, QueueListIcon, UsersIcon, ArrowRightEndOnRectangleIcon } from '@heroicons/react/24/outline';
+import { Cog6ToothIcon, QueueListIcon, UsersIcon, ArrowRightEndOnRectangleIcon } from '@heroicons/react/24/outline';
 import classNames from "../../utils/classNames.tsx";
 
 interface NavigationItem {
@@ -10,8 +10,7 @@ interface NavigationItem {
 }
 
 const navigation_top: NavigationItem[] = [
-    { name: 'Menu', href: '/menu', icon: QueueListIcon, current: true },
-    { name: 'Commande', href: '/order', icon: ShoppingBagIcon, current: false },
+    { name: 'Menu', href: '/', icon: QueueListIcon, current: true },
 ];
 
 const navigation_bot: NavigationItem[] = [
